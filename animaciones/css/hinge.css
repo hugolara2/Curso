@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+    width: 100%;
+}
+.wrap {
+    margin: 0px auto;
+    width: 486px;
+}
+
+.box {
+    width: 160px;
+    height: 120px;
+    float: left;
+    background: #347fc3;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.text {
+  text-align: center;
+  margin-top: 56px;
+  color: #fff;
+  font-size: 1.0em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hinge{
+  0% {transform: rotate(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+  20%, 60% {transform: rotate(80deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+  40% {transform: rotate(60deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+  80% {transform: rotate(60deg) translateY(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+  100% {transform: translateY(700px);}
+}
+
+.hinge {
+  margin: 20px;
+  animation-name: hinge;
+}
